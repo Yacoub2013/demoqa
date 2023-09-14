@@ -16,3 +16,6 @@ class DemoQa(BasePage):
             return False
         return True
 
+
+
+

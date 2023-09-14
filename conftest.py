@@ -7,3 +7,5 @@ def browser():
     driver = webdriver.Chrome()
     yield driver   # аналог return но не завершает её выполнение (возвращаем driver)
     driver.quit()    # драйвер закрывется
+
+
