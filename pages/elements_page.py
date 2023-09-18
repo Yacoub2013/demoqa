@@ -1,4 +1,4 @@
-from selenium.webdriver.remote.webelement import WebElement
+from components.components import WebElement
 from pages.base_page import BasePage
 
 
@@ -14,4 +14,4 @@ class ElementsPage(BasePage):
         self.btn_sidebar_first = WebElement(driver, 'div:nth-child(1)>div>ul>#item-0>span')
         self.btn_siderbar_first_textbox = WebElement(driver, 'div:nth-child(1)>div>ul>#item-0>span')
         self.basement = WebElement(driver, '#app > footer > span')
-        self.centre = WebElement(driver, '#app > footer > span')
+        self.centre = WebElement(driver, 'div.col-12.mt-4.col-md-6')

@@ -2,7 +2,7 @@ from selenium.common import NoSuchElementException
 from selenium.webdriver.common.by import By
 
 
-class WepElement:
+class WebElement:
     def __init__(self, driver, locator=''):
         self.driver = driver
         self.locator = locator
