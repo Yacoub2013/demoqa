@@ -18,3 +18,4 @@ def test_visible_default(browser):
     assert page_accordion.element_1.visible()
     assert page_accordion.element_2.visible()
     assert page_accordion.element_3.visible()
+

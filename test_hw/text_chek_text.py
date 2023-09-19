@@ -17,3 +17,4 @@ def test_text_centre(browser):
     page = ElementsPage(browser)
     assert page.centre.get_text() == 'Please select an item from left to start practice.'
 
+

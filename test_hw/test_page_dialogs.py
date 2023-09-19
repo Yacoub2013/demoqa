@@ -7,3 +7,4 @@ def test_modal_dialogs(browser):
     modaldialogs.visit()
     assert modaldialogs.widgest.check_count_elements(5)
 
+

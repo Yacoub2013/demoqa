@@ -20,3 +20,4 @@ def test_not_visible_btn_siderbar(browser):
     element_page.btn_sidebar_first.click()
     time.sleep(2)
     assert not element_page.btn_siderbar_first_checkbox.visible()
+

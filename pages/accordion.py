@@ -14,3 +14,4 @@ class Accordion(BasePage):
         self.element_1 = WebElement(driver, '#section2Content > p:nth-child(1)')
         self.element_2 = WebElement(driver, '#section2Content > p:nth-child(2)')
         self.element_3 = WebElement(driver, '#section3Content')
+
