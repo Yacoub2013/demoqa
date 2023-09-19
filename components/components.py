@@ -10,14 +10,27 @@ class WebElement:
     def click(self):
         self.find_element().click()
 
-    def find_element(self):   #метод поиска
+    def find_element(self):  # метод поиска
         return self.driver.find_element(By.CSS_SELECTOR, self.locator)
+
+    def find_elements(self):  # метод поиска
+        return self.driver.find_elements(By.CSS_SELECTOR, self.locator)
 
     def exist(self):
         try:
-            self.find_element()  #вызываем метод который мы создале в родителе
+            self.find_element()  # вызываем метод который мы создале в родителе
         except NoSuchElementException:
             return False
         return True
+
     def get_text(self):
         return str(self.find_element().text)
+
+    def visible(self):
+        return self.find_element().is_displayed()
+
+    def check_count_elements(self, count: int):  # длина элемента
+        if len(self.find_elements()) == count:
+            return True
+        return False
+
