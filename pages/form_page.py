@@ -10,7 +10,6 @@ class FormPage(BasePage):
         self.base_url = "https://demoqa.com/automation-practice-form"
         super().__init__(driver, self.base_url)
 
-
         self.first_name = WebElement(driver, '#firstName')
         self.last_name = WebElement(driver, '#lastName')
         self.user_email = WebElement(driver, '#userEmail')
@@ -21,14 +20,7 @@ class FormPage(BasePage):
         self.btn_close_modal = WebElement(driver, '#closeLargeModal')
         self.hobbies = WebElement(driver, '#hobbiesWrapper > div.col-md-9.col-sm-12 > div:nth-child(1)')
         self.corrent_address = WebElement(driver, '#currentAddress')
-        self.state = WebElement(driver, '#state > div > div.css-1hwfws3>div ')
-        self.state_0 = WebElement(driver, 'react-select-3-option-0')
-        self.state_1 = WebElement(driver, 'react-select-3-option-1')
-        self.state_2 = WebElement(driver, 'react-select-3-option-2')
-        
-
-
-
-
-
-
+        self.state = WebElement(driver, '#state > div > div.css-1hwfws3 > div ')
+        self.state_2 = WebElement(driver, '#react-select-3-option-2')
+        self.city = WebElement(driver, '#city > div > div.css-1hwfws3 > div ')
+        self.city_1 = WebElement(driver, '#react-select-4-option-1')
