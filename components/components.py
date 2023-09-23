@@ -1,5 +1,6 @@
 from selenium.common import NoSuchElementException
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 
 
 class WebElement:
@@ -33,4 +34,20 @@ class WebElement:
         if len(self.find_elements()) == count:
             return True
         return False
+
+    def send_keys(self, text: str):
+        self.find_element().send_keys(text)
+
+    def click_force(self):
+        self.driver.execute_script("arguments[0].click();", self.find_element())
+
+    def clear(self):
+        self.find_element().send_keys(Keys.CONTROL + 'a')
+        self.find_element().send_keys(Keys.DELETE)
+
+    def find_elements_1(self):  # метод поиска
+        return self.driver.find_elements(By.XPATH, '//div[text()="Haryana"] /parent::div')
+
+
+
 
