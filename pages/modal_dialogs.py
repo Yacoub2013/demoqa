@@ -9,8 +9,10 @@ class ModalDialogs(BasePage):
         self.base_url = 'https://demoqa.com/modal-dialogs'
         super().__init__(driver, self.base_url)
 
-        self.widgest = WebElement(driver, '##app > div > div > div.row > div:nth-child(1) > div > div > '
-                                          'div:nth-child(4) > span > div > div.header-text > span > svg > path')
+        self.widgest = WebElement(driver, '#app > div > div > div.row > div:nth-child(1) > div > div > div:nth-child(4) > span > div > div.header-text > span > svg > path')
+        self.tool_icon = WebElement(driver, '#app > header')
+        self.title = WebElement(driver, 'head > title')
+        self.url = 'https://demoqa.com/'
 
 
 

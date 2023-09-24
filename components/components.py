@@ -45,8 +45,6 @@ class WebElement:
         self.find_element().send_keys(Keys.CONTROL + 'a')
         self.find_element().send_keys(Keys.DELETE)
 
-    def find_elements_1(self):  # метод поиска
-        return self.driver.find_elements(By.XPATH, '//div[text()="Haryana"] /parent::div')
 
 
 

@@ -14,11 +14,3 @@ class DemoQa(BasePage):
         self.elements = WebElement(driver, '#app > div > div > div.home-body > div > div:nth-child(1)')
 
 
-
-
-
-
-
-
-
-
