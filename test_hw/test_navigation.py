@@ -27,6 +27,7 @@ def test_navigation(browser):
     time.sleep(2)
 
     assert browser.current_url == 'https://demoqa.com/'
+    assert browser.title == 'DEMOQA'
 
     browser.set_window_size(1000, 1000)
     time.sleep(2)
