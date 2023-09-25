@@ -1,5 +1,4 @@
 import time
-
 from conftest import browser
 from pages.modal_dialogs import ModalDialogs
 
