@@ -1,8 +1,6 @@
 import time
 
 from conftest import browser
-from pages.demoqa import DemoQa
-from pages.elements_page import ElementsPage
 from pages.modal_dialogs import ModalDialogs
 
 
