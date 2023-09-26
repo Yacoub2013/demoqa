@@ -24,4 +24,5 @@ class FormPage(BasePage):
         self.state_2 = WebElement(driver, '#react-select-3-option-2')
         self.city = WebElement(driver, '#city > div > div.css-1hwfws3 > div ')
         self.city_1 = WebElement(driver, '#react-select-4-option-1')
+        self.submit_form = WebElement(driver, 'body > div.fade.modal.show > div > div')
 
