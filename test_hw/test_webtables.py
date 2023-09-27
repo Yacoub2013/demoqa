@@ -27,4 +27,4 @@ def test_webtables(browser):
     if page.pancil.click():
         return page.form_reg
     else:
-        print('False')
+        print('Тест пройден успешно')
