@@ -37,3 +37,5 @@ def test_login_form_validate(browser):
         return page.submit_form
     else:
         print("Тест пройден успешно")
+
+
