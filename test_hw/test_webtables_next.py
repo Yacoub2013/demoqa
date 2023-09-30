@@ -44,6 +44,7 @@ def test_webtables_next(browser):
     page.btn_submit.click_force()
     #time.sleep(5)
 
+
     page.page_next.click()
     #time.sleep(5)
     assert page.page_rows.get_dom_attribute('value') == '2'

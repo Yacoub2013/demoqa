@@ -2,6 +2,7 @@ import logging
 from lib2to3.pgen2 import driver
 
 from components.components import WebElement
+import requests
 
 
 class BasePage:
@@ -40,7 +41,7 @@ class BasePage:
             logging.log(1, ex)
             return False
 
-
-
-
+    def code_status(self):
+        resp = requests.get(self.base_url)
+        return resp.status_code == 200
 

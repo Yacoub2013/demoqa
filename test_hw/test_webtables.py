@@ -24,7 +24,7 @@ def test_webtables(browser):
     page.btn_submit.click_force()
     #time.sleep(10)
     assert page.first_name_typ.get_text() == ('NONONONONO')
-
+    time.sleep(10)
     if page.pancil.click():
         return page.form_reg
     else:
