@@ -13,5 +13,6 @@ class Slider(BasePage):
 
         self.slider = WebElement(driver, '#sliderContainer > div.col-9 > span > input')
         self.table = WebElement(driver, '#sliderValue')
+        self.inp = WebElement(driver, '#sliderContainer > div.col-9 > span > div')
 
 

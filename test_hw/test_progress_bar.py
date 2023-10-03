@@ -10,5 +10,6 @@ def test_progress_bar(browser):
     time.sleep(2)
     page.start.click()
     time.sleep(10)
-    while page.progress_bar.get_dom_attribute('value') == '51':
+    while page.progress_bar.get_dom_attribute('aria-valuenow') == '51':
         page.start.click()
+        # break
